@@ -6,7 +6,7 @@ author [Yerlan Idelbayev](https://github.com/akamaster/pytorch_resnet_cifar10.gi
 
 | Name      | # layers | # params| Test err(paper) | Test err(this impl.)|
 |-----------|---------:|--------:|:-----------------:|:---------------------:|
-|[ResNet20](https://github.com/akamaster/pytorch_resnet_cifar10/raw/master/pretrained_models/resnet20-12fca82f.th)   |    20    | 0.27M   | 8.75%| **8.27%**|
+|[ResNet20](./save_temp/checkpoint.th)   |    20    | 0.27M   | 8.75%| **8.8%**|
 
 
 ## Parameters
@@ -17,15 +17,18 @@ Training ResNet20 from scratch:
 
 Calculate and plot accuracy for pruning layers1, layers2 and layers3 of ResNet20:
 * report=1
+* resume=./save_temp/checkpoint.th
 
 Calculate and plot accuracy for pruning conv layers in ResNet20 in sequence:
 * report=2
+* resume=./save_temp/checkpoint.th
 
 Plot accuracy for pruning layers1, layers2 and layers3 of ResNet20:nce
 * report=3
 
 Plot accuracy for pruning conv layers in ResNet20 in sequence:
 * report=4
+
 
 
 ## How to run?

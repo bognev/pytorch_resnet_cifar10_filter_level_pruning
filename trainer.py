@@ -153,8 +153,6 @@ def train(train_loader, model, criterion, optimizer, epoch):
         target = target.cuda()
         input_var = input.cuda()
         target_var = target
-        if args.half:
-            input_var = input_var.half()
 
         # compute output
         output = model(input_var)

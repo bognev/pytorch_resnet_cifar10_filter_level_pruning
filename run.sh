@@ -4,6 +4,10 @@
 #report=0
 #resume=
 
+#Training ResNet20 from last epoch:
+#report=0
+#resume=./save_temp/checkpoint.th
+
 #Calculate and plot accuracy for pruning layers1, layers2 and layers3 of ResNet20:
 #report=1
 #resume=./save_temp/checkpoint.th
