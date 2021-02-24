@@ -1,7 +1,6 @@
 # 
 
-The purpose of this repo is to demostrate accuracy in case of filter level pruning  of the ResNet20 for CIFAR10. The following model are desined by
-author [Yerlan Idelbayev](https://github.com/akamaster/pytorch_resnet_cifar10.git) of "Proper {ResNet} Implementation for {CIFAR10/CIFAR100} in {PyTorch}"
+The purpose of this repo is to demostrate accuracy in case of filter level pruning  of the ResNet20 for CIFAR10. 
 
 
 | Name      | # layers | # params| Test err(paper) | Test err(this impl.)|
@@ -54,6 +53,10 @@ chmod +x run.sh && ./run.sh
  * Try different algorithms and metrics for clustering. 
  * Try different types of estimation filter importance.
  * Not pruning, but merging similar clusters.
+
+
+# Acknowledgments
+The ResNet implementation are desined by [Yerlan Idelbayev](https://github.com/akamaster/pytorch_resnet_cifar10.git) of "Proper ResNet Implementation for CIFAR10/CIFAR100 in PyTorch"
  
  
 
